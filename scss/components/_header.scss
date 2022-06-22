@@ -1,0 +1,107 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../base/mixin';
+@import '../base/mixin';
+
+/*HEADER INDEX*/
+
+header {
+
+    div {
+        .logo-inicio {
+            @include margwid (1% 1%, 15%);
+            display: flex;
+            justify-content: left;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+    }
+
+    .abierto {
+        font-size: nth($size-fonts, 3);
+        font-family: nth($fonts, 1);
+        color: nth($colors, 1);
+        @include margwid (1% 35%, 15%);
+        display: inline;
+    }
+
+    nav {
+        div {
+            a {
+                .whats-inicio {
+                    width: 6%;
+                    margin: 1% 1%;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    justify-content: right;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    .titulo {
+        color: nth($colors, 2);
+        font-size: nth($size-fonts, 1);
+        font-family: nth($fonts, 2);
+        border: 3px solid nth($colors, 3);
+        background-color: nth($colors, 1);
+        padding: 3% 1%;
+        margin: 1% 1%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbarsect {
+        margin: 1% 1%;
+    }
+
+    .linkinicio {
+        text-decoration: none;
+        list-style-type: none;
+        font-family: nth($fonts, 1);
+        font-size: nth($size-fonts, 3);
+        margin: 0% 5% 0% 10%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    header {
+        .abierto {
+            margin: 1% 32%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 798px) {
+    header {
+        .abierto {
+            margin: 1% 22%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 516px) {
+    header {
+        .abierto {
+            margin: 1% 1%;
+            font-size: 1.5rem;
+        }
+
+        .titulo {
+            font-size: nth($size-fonts, 3);
+        }
+    }
+
+
+}

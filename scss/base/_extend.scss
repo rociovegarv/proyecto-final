@@ -1,0 +1,10 @@
+@import '../base/colors';
+@import '../base/fonts'; 
+
+%tituloservicios {
+    
+   color: nth($colors, 3 );
+   font-size: nth($size-fonts, 3 );
+   font-family: nth($fonts, 1 );
+}
+

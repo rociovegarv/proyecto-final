@@ -1,0 +1,173 @@
+@import '../base/colors';
+@import '../base/fonts';
+
+/*footer INDEX*/
+
+footer {
+
+    .imagenfoot {
+
+        background-color: nth($colors, 4)
+    }
+
+
+    .fotosfoot {
+
+        width: 50%;
+        margin: 0% 0% 0% 25%;
+    }
+
+
+
+
+    .redes {
+        margin: 5% 5%;
+        padding: 5% 5% 6% 3%;
+    }
+
+    .textosredes {
+
+        font-size: 15px;
+        margin: 5% 15% 1% 0%;
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        color: black;
+    }
+
+    .logowhats {
+        width: 23%;
+    }
+
+    .logoinsta {
+        width: 20%;
+    }
+
+    .logomail {
+        width: 18%;
+    }
+
+    .logopago {
+        width: 40%;
+    }
+
+
+
+
+    div {
+
+        .copy {
+
+            font-size: 2rem;
+            margin: 1% 29% 1% 1%;
+            font-family: 'Open Sans', sans-serif;
+            display: block;
+            color: black;
+        }
+
+    }
+
+
+}
+
+
+/*redes contacto*/
+
+@media screen and (max-width: 992px) {
+
+    footer {
+        .textosredes {
+            margin: 5% 15% 1% 10%;
+            font-size: nth($size-fonts, 4);
+        }
+
+        .logowhats {
+            width: 18%;
+        }
+
+        .logoinsta {
+            width: 18%;
+        }
+
+        .logomail {
+            width: 17%;
+        }
+
+        .logopago {
+            width: 33%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 578px) {
+    footer {
+        .fotosfoot {
+
+            width: 80%;
+            margin: 1% 6% 1% 10%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+
+    footer {
+        .imagenfoot 
+        {
+            margin: 1% 1% 3% 1%;
+        }
+        
+        .redes {
+            margin: 10% 0%;
+        }
+        
+
+        .textosredes {
+            margin: 3% 1% 9% 0%;
+            font-size: 6px
+        }
+
+        .logowhats {
+            width: 10%;
+        }
+
+        .logoinsta {
+            width: 10%;
+        }
+
+        .logomail {
+            width: 10%;
+        }
+
+        .logopago {
+            width: 30%;
+        }
+
+        div {
+            .copy {
+
+                font-size: 6px;
+                margin: 1% 29% 1% 1%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    footer { 
+        .redes {
+
+            margin: 20% 1% 10% 0%;
+        }
+        .imagenfoot {
+            margin: 12% 0%;
+        }
+
+        .fotosfoot {
+            width: 65%;
+            margin: 0% 0% 0% 19%
+        }
+    }
+}
