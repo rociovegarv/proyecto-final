@@ -94,12 +94,13 @@ header .container-abierto {
   animation: translate 10s infinite;
   animation-direction: reverse;
   animation-timing-function: linear;
+  animation-fill-mode: initial;
 }
 @keyframes translate {
   from {
-    transform: translate(50%);
+    transform: translate(100%);
     to {
-      transform: translate(50%);
+      transform: translate(0);
     }
   }
 }
