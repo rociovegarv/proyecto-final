@@ -16,21 +16,23 @@ header {
             flex-wrap: wrap;
         }
     }
-.container-abierto {animation: translate 10s infinite;
-    animation-direction: reverse;
-    animation-timing-function: linear;
-    animation-fill-mode: initial;   
-}
 
-@keyframes translate { from { transform: translate(100%);
-    to {transform: translate(0);} }}
-
-    .abierto {
-        font-size: nth($size-fonts, 3);
-        font-family: nth($fonts, 1);
-        color: nth($colors, 1);
-       display: inline;
+    .container-abierto {animation: translate 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: both;   
+        animation-direction: alternate;
     }
+    
+    @keyframes translate { from { transform: translate(50%);
+        to {transform: translate(40%);} }}
+    
+        .abierto {
+            font-size: nth($size-fonts, 3);
+            font-family: nth($fonts, 1);
+            color: nth($colors, 1);
+         
+        }
    
     nav {
             a {

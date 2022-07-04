@@ -91,16 +91,17 @@ header div .logo-inicio {
   flex-wrap: wrap;
 }
 header .container-abierto {
-  animation: translate 10s infinite;
-  animation-direction: reverse;
+  animation: translate 10s;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-fill-mode: initial;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 @keyframes translate {
   from {
-    transform: translate(100%);
+    transform: translate(50%);
     to {
-      transform: translate(0);
+      transform: translate(40%);
     }
   }
 }
@@ -108,7 +109,6 @@ header .abierto {
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
   color: black;
-  display: inline;
 }
 header nav a .whats-inicio {
   margin: 3% 8%;
