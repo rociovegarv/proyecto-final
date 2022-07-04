@@ -1,7 +1,7 @@
 @import '../base/colors';
 @import '../base/fonts';
 @import '../base/mixin';
-@import '../base/mixin';
+
 
 /*HEADER INDEX*/
 
@@ -9,50 +9,55 @@ header {
 
     div {
         .logo-inicio {
-            @include margwid (1% 1%, 15%);
+            @include margwid (1% 1%, 20%);
             display: flex;
             justify-content: left;
             align-items: flex-end;
             flex-wrap: wrap;
         }
     }
+.container-abierto {animation: translate 10s infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes translate { from { transform: translate(50%);
+    to {transform: translate(50%);} }}
 
     .abierto {
         font-size: nth($size-fonts, 3);
         font-family: nth($fonts, 1);
         color: nth($colors, 1);
-        @include margwid (1% 35%, 15%);
-        display: inline;
+       display: inline;
     }
-
+   
     nav {
-        div {
             a {
                 .whats-inicio {
-                    width: 6%;
-                    margin: 1% 1%;
+                    @include margwid (3% 8%, 6%);
                     position: fixed;
                     top: 0;
                     right: 0;
                     display: flex;
                     justify-content: right;
                     flex-wrap: wrap;
+                    z-index: 1;
                 }
             }
         }
-    }
+    
 
     .titulo {
         color: nth($colors, 2);
-        font-size: nth($size-fonts, 1);
         font-family: nth($fonts, 2);
         border: 3px solid nth($colors, 3);
         background-color: nth($colors, 1);
         padding: 3% 1%;
-        margin: 1% 1%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @include fontmar (1% 1%, 4rem);
     }
 
     .navbarsect {
@@ -63,39 +68,20 @@ header {
         text-decoration: none;
         list-style-type: none;
         font-family: nth($fonts, 1);
-        font-size: nth($size-fonts, 3);
-        margin: 0% 5% 0% 10%;
+        @include fontmar (0% 5% 0% 10%, 2rem);
 
     }
 
 }
 
 
-@media screen and (max-width: 992px) {
-    header {
-        .abierto {
-            margin: 1% 32%;
-        }
-    }
 
-}
-
-
-@media screen and (max-width: 798px) {
-    header {
-        .abierto {
-            margin: 1% 22%;
-        }
-    }
-
-}
 
 
 @media screen and (max-width: 516px) {
     header {
-        .abierto {
-            margin: 1% 1%;
-            font-size: 1.5rem;
+        .abierto {font-size: 1.5rem;
+        
         }
 
         .titulo {

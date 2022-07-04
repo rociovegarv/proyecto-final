@@ -3,3 +3,9 @@
     margin: $margin;
     width: $width;
 }
+
+@mixin fontmar ($margin, $font-size)
+{
+    margin: $margin;
+    font-size: $font-size;
+}

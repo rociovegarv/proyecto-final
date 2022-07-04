@@ -6,29 +6,17 @@
 /*MAIN INDEX*/
 
 main .carrousel {
-   width: 70%;
-   margin: 5% 1% 5% 15%;
+   @include margwid (5% 1% 5% 15%, 70%);
 }
 
 @media screen and (max-width: 465px) {
    main {
       .carrousel {
-         width: 77%;
-         margin: 2% 0% 4% 10%;
+         @include margwid (15% 0% 15% 0%, 100%);
       }
    }
 }
 
-@media screen and (max-width: 400px)
- {
-   main {
-      .carrousel {
-        
-    width: 80%;
-    margin: 12% 1% 5% 10%;
-      }
-   }
- }
 
 /*MAIN NOSOTROS*/
 
@@ -37,11 +25,10 @@ main {
    .parrafo-quienes {
 
       padding: 5% 14%;
-      margin: 5% 5%;
       color: nth($colors, 3);
       border: 6px solid nth($colors, 3);
-      font-size: nth($size-fonts, 1);
       font-family: nth($fonts, 1);
+      @include fontmar (5% 5%, 1rem)
    }
 }
 
@@ -50,9 +37,8 @@ main {
 @media screen and (max-width: 915px) {
    main {
       .parrafo-quienes {
-         margin: 8% 3% 8% 3%;
          padding: 2% 2% 2% 2%;
-         font-size: nth($size-fonts, 3);
+         @include fontmar (8% 3% 8% 3%, 2rem);
       }
    }
 }
@@ -60,12 +46,24 @@ main {
 /*main productos*/
 
 main {
+   .sec-products {
+     width: 100%;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      justify-content: center;
+
+   }
+   
 .imgproduct {
    width: 70%;
    height: 80%;
    border-radius: 15%;
 }
 
+.imgproduct:hover {
+   transform: scale(0.70);
+   transition: all, 0.5s;
+}
 .textproduct {
    font-size: nth($size-fonts , 3 );
    font-family: nth($fonts, 1 );
@@ -75,24 +73,26 @@ main {
 
 /*medias*/
 
-@media screen and (max-width: 990px)  
-{
-   main { .textproduct { font-size: 24px;
-      }
 
-      .imgproduct {
-         width:  90%;
-         height: 60%;
-      }
-   }
+@media screen and (max-width: 550px)
+ { main {
+   
+   .sec-products {
+  
+       grid-template-columns: 50% 50%;
+       margin: 5% 5%;
+ }
+.imgproduct {
+   width: 60%;
+   height: 70%;
+} 
+
+.textproduct {
+   font-size: 12px;
+}}
 }
 
 
-@media screen and (max-width: 770px) {
-   main {
- .textproduct {font-size: 14px;}      
-   }
-}  
 
 /*main SERVICIOS*/
 main {
@@ -101,12 +101,11 @@ main {
       height: 100%;
       border-radius: 15%;
    }
-
-   .imgservicios3 {
-      width: 100%;
-      height: 100%;
-      border-radius: 15%;
-   }
+.imgservicios:hover {
+   transform: scale(0.75);
+   transition: all, 0.5s;
+}
+   
    .servicioscont {margin: 6% 0% 20% 3%;
    }
 
@@ -121,9 +120,7 @@ main {
    .listaautomotor li {
       list-style-type: none;
       font-family: 'Open Sans', sans-serif;
-      font-size: 2rem;
-    margin: 9% 1% 0% 11%;
-  
+  @include fontmar (9% 1% 0% 11%, 2rem);
    }
 
 
@@ -140,11 +137,6 @@ main {
          border-radius: 10%;
    }
 
-   .imgservicios3 {
-      width: 95%;
-      height: 76%;
-      border-radius: 10%;
-   }
    } 
 
 }
@@ -154,26 +146,22 @@ main {
 { main {
    .imgservicios {
       height: 75%;
+      width: 95%;
    }
 
-   .imgservicios3 {
-      width: 95%;
-      height: 76%;
-   }
    .tituloservicios {
     padding: 1% 11%;
     border: 3px solid whitesmoke;
-    margin: 3% 26% 0% 0%;
-    font-size: 12px;
+    
+    @include fontmar (3% 26% 0% 0%, 12px)
    }
    
    .listaautomotor li {
-      font-size: 12px;
-      margin: 8% 0% 0% 0%;
+      @include fontmar (8% 0% 0% 0%, 12px);
    }
    .servicioscont {
       
-    margin: 8% 0% 3% 3%;
+    margin: 8% 0% 3% 0%;
    }
 
 }
@@ -187,14 +175,12 @@ main {
 main {
 
    .mapita {
-      width: 80%;
-      margin: 1% 20%;
+      @include margwid (1% 20%, 80%);
 
    }
 
    .form {
-      width: 40%;
-      margin: 1% 1%;
+      @include margwid (1% 1%, 40%);
    }
 }
 
@@ -202,13 +188,10 @@ main {
 
 @media screen and (max-width: 465px) {
    main .mapita {
-      width: 130%;
       height: 50%;
-      margin: 20% 38%;
+      @include margwid (20% 38%, 130%);
    }
    main .form {
-      
-    width: 70%;
-    margin: 3% 15%;
+      @include margwid (3% 15%, 70%);
 }
    }
