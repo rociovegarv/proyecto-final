@@ -9,7 +9,7 @@ header {
 /*logo header*/
     div {
         .img-logo {
-            @include margwid (1% 1%, 20%);
+            @include margwid (1% 1%, 26%);
             display: flex;
             justify-content: left;
             align-items: flex-end;
@@ -26,9 +26,13 @@ header {
            display: flex;
            justify-content: right;
            flex-wrap: wrap;
-           z-index: 1;
-           @include margwid (2% 12%, 100%);}
+           z-index: 1;}
 
+       }
+
+       .img-whats {
+        
+        @include margwid (2% 12%, 10%);
        }
 
        /*emergencias 24hs*/
@@ -85,7 +89,7 @@ header {
 
 @media screen and (max-width: 516px) {
     header {
-        .p-abierto {font-size: 1.5rem;
+        .p-abierto {font-size: 18px;
         
         }
 
