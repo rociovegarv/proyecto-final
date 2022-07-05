@@ -28,7 +28,7 @@ main {
       color: nth($colors, 3);
       border: 6px solid nth($colors, 3);
       font-family: nth($fonts, 1);
-      @include fontmar (5% 5%, 1rem)
+      @include fontmar (5% 5%, 3rem)
    }
 }
 
@@ -96,20 +96,20 @@ main {
 
 /*main SERVICIOS*/
 main {
-   .imgservicios {
+   .img-servicios {
       width: 100%;
       height: 100%;
       border-radius: 15%;
    }
-.imgservicios:hover {
+.img-servicios:hover {
    transform: scale(0.75);
    transition: all, 0.5s;
 }
    
-   .servicioscont {margin: 6% 0% 20% 3%;
+   .container-servicios {margin: 6% 0% 20% 3%;
    }
 
-   .tituloservicios {
+   .titulo-servicios {
       @extend %tituloservicios;
       padding: 2% 3%;
       border: 5px solid nth($colors, 3);
@@ -117,7 +117,7 @@ main {
    }
 
 
-   .listaautomotor li {
+   .lista-servicios li {
       list-style-type: none;
       font-family: 'Open Sans', sans-serif;
   @include fontmar (9% 1% 0% 11%, 2rem);
@@ -131,7 +131,7 @@ main {
 @media screen and (max-width: 995px) {
 
    main {
-      .imgservicios {
+      .img-servicios {
          width: 90%;
          height: 90%;
          border-radius: 10%;
@@ -144,22 +144,22 @@ main {
 
 @media screen and (max-width: 775px)
 { main {
-   .imgservicios {
+   .img-servicios {
       height: 75%;
       width: 95%;
    }
 
-   .tituloservicios {
+   .titulo-servicios {
     padding: 1% 11%;
     border: 3px solid whitesmoke;
     
     @include fontmar (3% 26% 0% 0%, 12px)
    }
    
-   .listaautomotor li {
+   .lista-servicios li {
       @include fontmar (8% 0% 0% 0%, 12px);
    }
-   .servicioscont {
+   .container-servicios {
       
     margin: 8% 0% 3% 0%;
    }

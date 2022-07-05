@@ -3,7 +3,7 @@ html {
   font-size: 10px;
 }
 
-main .tituloservicios {
+main .titulo-servicios {
   color: whitesmoke;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
@@ -16,6 +16,7 @@ html {
 /*INDEX*/
 /*color fondo*/
 body {
+  overflow-x: hidden;
   background: orange;
 }
 
@@ -82,7 +83,13 @@ html {
 }
 
 /*HEADER INDEX*/
-header div .logo-inicio {
+header {
+  /*logo header*/
+  /*whatsapp fixed*/
+  /*emergencias 24hs*/
+  /*titulo de la pag*/
+}
+header div .img-logo {
   margin: 1% 1%;
   width: 20%;
   display: flex;
@@ -90,29 +97,7 @@ header div .logo-inicio {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-header .container-abierto {
-  animation: translate 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-}
-@keyframes translate {
-  from {
-    transform: translate(50%);
-    to {
-      transform: translate(40%);
-    }
-  }
-}
-header .abierto {
-  font-size: 2rem;
-  font-family: "Open Sans", sans-serif;
-  color: black;
-}
-header nav a .whats-inicio {
-  margin: 3% 8%;
-  width: 6%;
+header nav .container-whats {
   position: fixed;
   top: 0;
   right: 0;
@@ -120,8 +105,28 @@ header nav a .whats-inicio {
   justify-content: right;
   flex-wrap: wrap;
   z-index: 1;
+  margin: 2% 12%;
+  width: 100%;
 }
-header .titulo {
+header .container-abierto {
+  animation: translate 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes translate {
+  from {
+    transform: translate(15%);
+    to {
+      transform: translate(-15%);
+    }
+  }
+}
+header .p-abierto {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+header .h1-titulo {
   color: orange;
   font-family: "Orbitron", sans-serif;
   border: 3px solid whitesmoke;
@@ -145,10 +150,10 @@ header .linkinicio {
 }
 
 @media screen and (max-width: 516px) {
-  header .abierto {
+  header .p-abierto {
     font-size: 1.5rem;
   }
-  header .titulo {
+  header .h1-titulo {
     font-size: 2rem;
   }
 }
@@ -160,7 +165,7 @@ html {
   font-size: 10px;
 }
 
-main .tituloservicios {
+main .titulo-servicios {
   color: whitesmoke;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
@@ -189,7 +194,7 @@ main .parrafo-quienes {
   border: 6px solid whitesmoke;
   font-family: "Open Sans", sans-serif;
   margin: 5% 5%;
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 915px) {
@@ -235,24 +240,24 @@ main .textproduct {
   }
 }
 /*main SERVICIOS*/
-main .imgservicios {
+main .img-servicios {
   width: 100%;
   height: 100%;
   border-radius: 15%;
 }
-main .imgservicios:hover {
+main .img-servicios:hover {
   transform: scale(0.75);
   transition: all, 0.5s;
 }
-main .servicioscont {
+main .container-servicios {
   margin: 6% 0% 20% 3%;
 }
-main .tituloservicios {
+main .titulo-servicios {
   padding: 2% 3%;
   border: 5px solid whitesmoke;
   margin: 5% 13% 0% 5%;
 }
-main .listaautomotor li {
+main .lista-servicios li {
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
   margin: 9% 1% 0% 11%;
@@ -261,28 +266,28 @@ main .listaautomotor li {
 
 /*medias*/
 @media screen and (max-width: 995px) {
-  main .imgservicios {
+  main .img-servicios {
     width: 90%;
     height: 90%;
     border-radius: 10%;
   }
 }
 @media screen and (max-width: 775px) {
-  main .imgservicios {
+  main .img-servicios {
     height: 75%;
     width: 95%;
   }
-  main .tituloservicios {
+  main .titulo-servicios {
     padding: 1% 11%;
     border: 3px solid whitesmoke;
     margin: 3% 26% 0% 0%;
     font-size: 12px;
   }
-  main .listaautomotor li {
+  main .lista-servicios li {
     margin: 8% 0% 0% 0%;
     font-size: 12px;
   }
-  main .servicioscont {
+  main .container-servicios {
     margin: 8% 0% 3% 0%;
   }
 }

@@ -6,9 +6,9 @@
 /*HEADER INDEX*/
 
 header {
-
+/*logo header*/
     div {
-        .logo-inicio {
+        .img-logo {
             @include margwid (1% 1%, 20%);
             display: flex;
             justify-content: left;
@@ -17,40 +17,43 @@ header {
         }
     }
 
-    .container-abierto {animation: translate 10s;
+    /*whatsapp fixed*/
+    
+    nav {
+        .container-whats {position: fixed;
+           top: 0;
+           right: 0;
+           display: flex;
+           justify-content: right;
+           flex-wrap: wrap;
+           z-index: 1;
+           @include margwid (2% 12%, 100%);}
+
+       }
+
+       /*emergencias 24hs*/
+
+    .container-abierto {animation: translate 2s;
         animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-fill-mode: both;   
-        animation-direction: alternate;
-    }
+          animation-timing-function: linear;  
+         
+     
+      }
+      
+      @keyframes translate { from { transform: translate(15%);
+          to {transform: translate(-15%);} }}
+
     
-    @keyframes translate { from { transform: translate(50%);
-        to {transform: translate(40%);} }}
-    
-        .abierto {
+        .p-abierto {
             font-size: nth($size-fonts, 3);
             font-family: nth($fonts, 1);
             color: nth($colors, 1);
          
         }
    
-    nav {
-            a {
-                .whats-inicio {
-                    @include margwid (3% 8%, 6%);
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    display: flex;
-                    justify-content: right;
-                    flex-wrap: wrap;
-                    z-index: 1;
-                }
-            }
-        }
-    
+/*titulo de la pag*/
 
-    .titulo {
+    .h1-titulo {
         color: nth($colors, 2);
         font-family: nth($fonts, 2);
         border: 3px solid nth($colors, 3);
@@ -82,11 +85,11 @@ header {
 
 @media screen and (max-width: 516px) {
     header {
-        .abierto {font-size: 1.5rem;
+        .p-abierto {font-size: 1.5rem;
         
         }
 
-        .titulo {
+        .h1-titulo {
             font-size: nth($size-fonts, 3);
         }
     }
