@@ -22,21 +22,22 @@ main .carrousel {
 
 main {
 
-   .parrafo-quienes {
+   .p-quienes {
 
       padding: 5% 14%;
       color: nth($colors, 3);
       border: 6px solid nth($colors, 3);
       font-family: nth($fonts, 1);
-      @include fontmar (5% 5%, 3rem)
+      @include fontmar (5% 5%, 3rem);
    }
 }
 
 
 
+
 @media screen and (max-width: 915px) {
    main {
-      .parrafo-quienes {
+      .p-quienes{
          padding: 2% 2% 2% 2%;
          @include fontmar (8% 3% 8% 3%, 2rem);
       }
@@ -46,25 +47,24 @@ main {
 /*main productos*/
 
 main {
-   .sec-products {
+   .container-products {
      width: 100%;
       display: grid;
       grid-template-columns: 30% 30% 30%;
       justify-content: center;
+  
 
    }
    
-.imgproduct {
+.img-product {
    width: 70%;
    height: 80%;
    border-radius: 15%;
 }
 
-.imgproduct:hover {
-   transform: scale(0.70);
-   transition: all, 0.5s;
+.img-product:hover {transform:scale(1.1)
 }
-.textproduct {
+.p-product {
    font-size: nth($size-fonts , 3 );
    font-family: nth($fonts, 1 );
 }
@@ -77,17 +77,17 @@ main {
 @media screen and (max-width: 550px)
  { main {
    
-   .sec-products {
+   .container-products {
   
        grid-template-columns: 50% 50%;
        margin: 5% 5%;
  }
-.imgproduct {
+.img-product {
    width: 60%;
    height: 70%;
 } 
 
-.textproduct {
+.p-product {
    font-size: 12px;
 }}
 }

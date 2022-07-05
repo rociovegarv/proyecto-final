@@ -104,14 +104,14 @@
       <div class="row">
 
         <!-- enviar un mensaje por mail -->
-        <div class="col-6 form">
-          <div class="mb-3">
+        <div class="col-6 form"   >
+          <div  action="form.php" method="POST" class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email o Teléfono</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" name="mail" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label" >Consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="consulta" rows="3"></textarea>
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-primary">Enviar</button>
@@ -142,34 +142,34 @@
   <footer>
 
     <!-- incio div imagenes -->
-    <div class="imagenfoot">
-      <img class="fotosfoot" src="../images/imgfoot.webp" alt="imagenes de marcas de trabajo. Ejemplo 'Travex'.">
+    <div class="container-imgfoot">
+      <img class="img-foot" src="../images/imgfoot.webp" alt="imagenes de marcas de trabajo. Ejemplo 'Travex'.">
     </div>
 
 
     <!-- redes sociales -->
-<section class="sec-redes">
+<section class="section-redes">
 
   <div >
     <nav>
-      <a href="https://www.whatsapp.com/"><img class="redes-item" src="../images/whatsapp1.webp"
+      <a href="https://www.whatsapp.com/"><img class="item-redes" src="../images/whatsapp1.webp"
           alt="imagen logo whatsapp"></a>
-      <p class="textosredes">11111111</p>
+      <p class="p-redes">11111111</p>
     </nav>
   </div>
 
   <div >
     <nav>
-      <a href="https://www.instagram.com/"><img class="redes-item" src="../images/instagram1.webp"
+      <a href="https://www.instagram.com/"><img class="item-redes" src="../images/instagram1.webp"
           alt="logo Instagram"></a>
-      <p class="textosredes">Muguencerrajería</p>
+      <p class="p-redes">Muguencerrajería</p>
     </nav>
   </div>     
 
 
    <div >
-    <img class="redes-item" src="../images/pago1.webp" alt="logo pagos, efectivo, MercadoPago">
-    <p class="textosredes">Aceptamos efectivo, tarjeta y Mercado Pago</p>
+    <img class="item-redes" src="../images/pago1.webp" alt="logo pagos, efectivo, MercadoPago">
+    <p class="p-redes">Aceptamos efectivo, tarjeta y Mercado Pago</p>
     </div>
 </section>
      
@@ -179,7 +179,7 @@
     <!-- copyright -->
 
     <div>
-      <p class="copy">Copyright © 2022 / Aviso Legal </p>
+      <p class="p-copy">Copyright © 2022 / Aviso Legal </p>
     </div>
 
 

@@ -37,9 +37,10 @@ header {
 
        /*emergencias 24hs*/
 
-    .container-abierto {animation: translate 2s;
+    .container-abierto {animation: translate 4s;
         animation-iteration-count: infinite;
-          animation-timing-function: linear;  
+          animation-timing-function: linear; 
+        
          
      
       }
@@ -89,7 +90,7 @@ header {
 
 @media screen and (max-width: 516px) {
     header {
-        .p-abierto {font-size: 18px;
+        .p-abierto {font-size: 13px;
         
         }
 
