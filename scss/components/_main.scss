@@ -62,7 +62,8 @@ main {
    border-radius: 15%;
 }
 
-.img-product:hover {transform:scale(1.1)
+.img-product:hover {transform:scale(1.1); 
+   overflow: hidden;
 }
 .p-product {
    font-size: nth($size-fonts , 3 );
@@ -104,9 +105,10 @@ main {
 .img-servicios:hover {
    transform: scale(0.75);
    transition: all, 0.5s;
+   overflow: hidden;
 }
    
-   .container-servicios {margin: 6% 0% 20% 3%;
+   .container-servicios {margin: 10% 10%;
    }
 
    .titulo-servicios {
