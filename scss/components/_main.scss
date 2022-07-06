@@ -177,12 +177,12 @@ main {
 main {
 
    .mapita {
-      @include margwid (1% 20%, 80%);
+      @include margwid (20% 50%, 100%);
 
    }
 
    .form {
-      @include margwid (1% 1%, 40%);
+      @include margwid (1% 1%, 100%);
    }
 }
 
